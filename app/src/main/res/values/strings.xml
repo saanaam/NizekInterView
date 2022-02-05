@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NizekInterView</string>
+
+    <string name="exception_unknown_message">sample exception</string>
+    <string name="exception_network_unavailable_message">network unavailable</string>
+    <string name="exception_network_unavailable_title">network unavailable</string>
+    <string name="exception_illegal_data_message">illegal data exception</string>
+    <string name="exception_authorization_message">authorization failed</string>
+    <string name="exception_authorization_title">authorization failed</string>
+    <string name="exception_unknown_title">unknown title</string>
+    <string name="all_error_happens">errors</string>
+    <string name="family_name">Full Name</string>
+    <string name="user_name">User Name</string>
+    <string name="password_code">Password</string>
+    <string name="name_validation">Invalid Name</string>
+    <string name="user_name_validation">Invalid User Name</string>
+    <string name="password_validation">Invalid Password</string>
+    <string name="register">register</string>
+    <string name="logout">Logout</string>
+    <string name="welcome"> welcome </string>
+    <string name="login">Login</string>
+    <string name="welcom_to_nizek_app">Welcome to nizek interview Application</string>
+</resources>

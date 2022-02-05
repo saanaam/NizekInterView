@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/w_h_48dp"
+    android:addStatesFromChildren="true"
+    android:background="@drawable/click_effect"
+    android:backgroundTint="@color/button_enable_selector"
+    android:clickable="true"
+    android:enabled="false"
+    android:focusable="true"
+    android:padding="@dimen/padding_2dp"
+    app:cornerRadius="@dimen/corner_20dp"
+    app:layout_constraintDimensionRatio="3.6:1">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:text="ButtonTitle"
+        android:textAppearance="@style/Body00B4FfSp14M"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_sub_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_2dp"
+        android:text="ButtonSubTitle"
+        android:textAppearance="@style/Caption1a1a1aSp12M"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_icon"
+        android:layout_width="@dimen/w_h_24dp"
+        android:layout_height="@dimen/w_h_24dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:layout_marginEnd="@dimen/margin_2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/round_2dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/loadingGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="dot1, dot2, dot3" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dot1"
+        android:layout_width="@dimen/w_h_6dp"
+        android:layout_height="@dimen/w_h_6dp"
+        android:layout_marginEnd="@dimen/w_h_6dp"
+        android:src="@drawable/circle_loading_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/dot2"
+        app:layout_constraintEnd_toStartOf="@+id/dot2"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dot2"
+        android:layout_width="@dimen/w_h_6dp"
+        android:layout_height="@dimen/w_h_6dp"
+        android:src="@drawable/circle_loading_dot"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dot3"
+        android:layout_width="@dimen/w_h_6dp"
+        android:layout_height="@dimen/w_h_6dp"
+        android:layout_marginStart="@dimen/w_h_6dp"
+        android:src="@drawable/circle_loading_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/dot2"
+        app:layout_constraintStart_toEndOf="@+id/dot2"
+        app:tint="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

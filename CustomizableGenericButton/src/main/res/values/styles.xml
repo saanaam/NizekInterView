@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Body00B4FfSp14M">
+        <item name="android:fontFamily">@font/iran_sans_fa_num_medium</item>
+        <item name="android:textSize">@dimen/fs_14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Caption1a1a1aSp12M">
+        <item name="android:fontFamily">@font/iran_sans_fa_num_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/color_1a1a1a</item>
+    </style>
+
+    <style name="round_2dp">2dp</style>
+
+
+</resources>

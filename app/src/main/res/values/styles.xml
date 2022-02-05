@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="round_2dp" parent="">
+        <item name="cornerSize">2dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="MyDenseOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="hintTextAppearance">@style/OutlineBoxHintStyle</item>
+        <item name="android:textAppearance">@style/OutlineBoxTextStyle</item>
+        <item name="boxStrokeColor">@color/color_c9c9c9</item>
+        <item name="boxStrokeErrorColor">@color/color_ff0030</item>
+        <item name="boxStrokeWidth">@dimen/w_h_1dp</item>
+        <item name="boxStrokeWidthFocused">@dimen/w_h_1dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/corner_4dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/corner_4dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/corner_4dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/corner_4dp</item>
+        <item name="hintTextColor">@color/color_808080</item>
+        <item name="errorIconDrawable">@null</item>
+    </style>
+
+
+    <style name="MyThemeOverlayOutlinedDense">
+        <item name="editTextStyle">@style/MyTextInputEditText_outlinedBox_dense_h</item>
+    </style>
+
+    <style name="MyTextInputEditText_outlinedBox_dense_h" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:paddingTop">@dimen/padding_12dp</item>
+        <item name="android:paddingBottom">@dimen/padding_12dp</item>
+    </style>
+
+    <style name="OutlineBoxHintStyle" parent="MyDenseOutlined">
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColorHint">@color/color_808080</item>
+    </style>
+
+    <style name="OutlineBoxTextStyle" parent="MyDenseOutlined">>
+        <item name="android:textSize">@dimen/fs_14sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="singleLine">false</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="OutlineBoxMarketerTextStyle" parent="MyDenseOutlined">
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="singleLine">false</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+
+    <style name="Body333333Sp14B">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/fs_14sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="Body333333Sp16B">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/fs_16sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="Body808080Sp14R">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_14sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+    <style name="Caption333333Sp12M">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="Caption00B4FfSp12M">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Caption005C84Sp12M">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Body333333Sp12M">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="Caption333333Sp12R">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="Caption808080Sp12R">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+
+    <style name="InputLableErrorFf0030Sp12R">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/color_ff0030</item>
+    </style>
+
+    <style name="CaptiopnFf0030Sp10R">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_10sp</item>
+        <item name="android:textColor">@color/color_ff0030</item>
+    </style>
+
+    <style name="Caption808080Sp10L">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_10sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+
+    <style name="Caption333333Sp10L">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/fs_10sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+
+</resources>

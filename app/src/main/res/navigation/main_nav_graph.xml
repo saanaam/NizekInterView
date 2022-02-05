@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <action
+        android:id="@+id/action_global_login_fragment"
+        app:destination="@id/login_fragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/splash_nav_graph"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.sanam.nizekinterview.presentation.register.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login_fragment"
+            app:popUpTo="@id/register_fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_register_to_home"
+            app:destination="@id/home_fragment"
+            app:popUpTo="@id/register_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.sanam.nizekinterview.presentation.login.LoginFragment"
+        android:label="loginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue=""
+            app:nullable="true" />
+        <argument
+            android:name="password"
+            app:argType="string"
+            android:defaultValue=""
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/home_fragment"
+            app:popUpTo="@id/login_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.sanam.nizekinterview.presentation.home.HomeFragment"
+        android:label="homeFragment"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="fullName"
+            app:argType="com.sanam.nizekinterview.domain.userAcount.model.UserInfoEns" />
+        <action
+            android:id="@+id/action_home_to_login"
+            app:destination="@id/login_fragment"
+            app:popUpTo="@id/home_fragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_home_to_register"
+            app:destination="@id/register_fragment"
+            app:popUpTo="@id/home_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

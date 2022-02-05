@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NizekInterView" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="snackbarStyle">@style/CustomSnackbar</item>
+        <item name="snackbarTextViewStyle">@style/CustomSnackbarTextView</item>
+    </style>
+
+    <style name="Theme.NizekInterView.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomSnackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:layout_margin">@null</item>
+        <item name="android:layout_marginTop">@dimen/margin_16dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_16dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_80dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:topLeftRadius">@dimen/corner_4dp</item>
+        <item name="android:topRightRadius">@dimen/corner_4dp</item>
+        <item name="android:bottomLeftRadius">@dimen/corner_4dp</item>
+        <item name="android:bottomRightRadius">@dimen/corner_4dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomSnackbarTextView" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:gravity">end</item>
+        <item name="android:fontFamily">@font/iran_sans_fa_num_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/fs_12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <!--        when layout is ltr and lang rtl-->
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <dimen name="corner_4dp">4dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
+    <dimen name="fs_12sp">12sp</dimen>
+</resources>

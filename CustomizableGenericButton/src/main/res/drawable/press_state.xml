@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/dark_rect_20"/>
+    <item android:state_focused="false" android:drawable="@drawable/white_rect_20" />
+</selector>
